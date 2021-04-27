@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu Me con</title>
+    <style>
+        ul.hmenu{
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px orangered;
+            list-style-type: none;
+           
+        }
+        ul.hmenu>li>a{
+            color: orange;
+            font-variant: small-caps;
+            text-decoration: none;
+            font-size: 18px;
+            padding-right: 25px;
+            line-height: 30px;
+             background-color: greenyellow;
+        }
+        ul.hmenu>li>a:hover{
+            color: palegreen;
+            background-color: palevioletred;
+            font-weight: bold;
+        }
+        ul.hmenu>li{
+            float: left;
+            position: relative;
+        }
+        ul.hmenu>li:hover>.submenu{
+            display: block;
+        }
+        .submenu{
+            width: 250px;
+            margin: 0;
+            padding: 0;
+            border: 5px;
+            box-shadow: 0 0 5px blue;
+            border-radius: 5px;
+            list-style-type: none;
+            display: none;
+            position: absolute;
+        }
+        .submenu li>a{
+            display: block;
+            color: orange;
+            font-variant: small-caps;
+            text-decoration: none;
+            font-size: 18px;
+            padding-right: 25px;
+            line-height: 30px;
+        }
+        .submenu li>a:hover{
+            color: palegreen;
+            background-color: palevioletred;
+            font-weight: bold;
+    </style>
+</head>
+<body>
+    <ul class="hmenu">
+        <li><a href="#">hàng bán chạy</a></li>
+        <li><a href="#">hàng yêu thích</a></li>
+        <li><a href="#">hàng mới</a>
+            <ul class="submenu">
+                <li><a href="#">Nokia 1234</a></li>
+                <li><a href="#">samsjung</a></li>
+                <li><a href="#">oppo</a></li>
+                <li><a href="#">vsmart</a></li>
+            </ul>
+        </li>
+        <li><a href="#">hàng đặc biệt</a></li>
+        <li><a href="#">hàng giảm giá</a></li>
+    </ul>
+</body>
+</html>

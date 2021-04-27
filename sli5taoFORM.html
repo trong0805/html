@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forrm</title>
+</head>
+<body>
+    <h3>Đăng ký thành viên</h3>
+    <form name="dangky">
+        <label>Usename:</label> <br />
+        <input type="text"/> <br />
+        <label>Password:</label> <br />
+        <input type="text" /> <br />
+        <label>Fullname:</label> <br />
+        <input type="text" /> <br />
+        <label>Giới tính:</label> <br />
+        <input type="radio" value="Nam" name="gioitinh"/>Nam
+        <input type="radio" value="Nữ" name="gioitinh"/>Nữ <br />
+        <label>Sở thích</label> <br />
+        <input type="checkbox" name="sothich" value="bóng đá" />Bóng đá
+        <input type="checkbox" name="sothich" value="Xem phim" />Xem phim
+        <input type="checkbox" name="sothich" value="Nghe nhạc" />Nghe nhạc
+        <input type="checkbox" name="sothich" value="Du lịch" />Du lịch <br />
+        <label>Điều khoản:</label>:</lable> <br />
+        <textarea cols="30" role="10">
+            abcxyz
+        </textarea> <br />
+        <label>Ăn sáng:</label> <br />
+        <select>
+            <option>xôi gấc</option>
+            <option>phở gà</option>
+            <option>hến giá</option>
+        </select>
+        <br />
+        <label>select cho phép chọn nhiều-listbox</label> <br />
+        <select multiple>
+            <option>xôi gấc</option>
+            <option>phở gà</option>
+            <option>hến giá</option>
+        </select>
+        <br /><label>Email:</label> <br />
+        <input type="email" placeholder="nhập vào email của bạn." /> <br />
+        <br /><label>Lương:</label> <br />
+        <input type="number" placeholder="nhập vào lương của bạn." /> <br />
+        <label>Ảnh</label> <br />
+        <input type="file" /> <br />
+        <input type="submit" value="Register" />
+    </form>
+</body>
+</html>
